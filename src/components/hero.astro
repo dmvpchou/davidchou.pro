@@ -1,0 +1,33 @@
+---
+import { Picture } from "astro:assets";
+import heroImage from "../assets/hero-screenshot.png";
+import Link from "@components/ui/link.astro";
+import Container from "@components/container.astro";
+---
+
+<div class="overflow-x-clip">
+  <Container>
+    <main class="place-items-center relative">
+      <div
+        class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-indigo-200 right-0 top-0">
+      </div>
+      <div
+        class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-purple-200 right-56 top-10">
+      </div>
+      
+
+      <div class="py-3 lg:col-span-2 flex justify-center">
+        <Picture
+          src={heroImage}
+          alt="David Chou LOGO"
+          formats={["avif", "webp"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, heroImage.width]}
+          loading="eager"
+          fetchpriority="high"
+          style={{ width: '100%' }} 
+        />
+      </div>
+    </main>
+  </Container>
+</div>
