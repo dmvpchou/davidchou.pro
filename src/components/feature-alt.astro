@@ -9,37 +9,57 @@ import Link from "@components/ui/link.astro";
 const { nomargin } = Astro.props;
 ---
 
+<style>
+  .paragraph {
+    margin-bottom: 1.5em;
+  }
+</style>
+
 <div
   class:list={[
     "max-w-4xl mx-auto flex flex-col items-center justify-center",
     !nomargin && "mt-24",
   ]}>
-  <Badge color="purple">MENIFESTO</Badge><br><br>
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight text-center">
-    一起渡過  <span class="text-indigo-600">有意義的時間</span>
+  <Badge color="purple">MENIFESTO</Badge>
+  <h2 class="text-4xl lg:text-4xl font-bold lg:tracking-tight text-center mt-4">
+    一起渡過 <span class="text-indigo-600">有意義的時間</span>
   </h2>
-  <br>
-  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty]">
-    啡藝精研今年邁入第五年。<br><br>
-    透過對咖啡的深切熱愛與專業精神，與您共同深探創意無限的咖啡世界。<br>
-    為客戶帶來的是味覺的饗宴，更是一段值得珍惜的美好時光。<br><br>
-
-    我們的品牌建立在三大核心價值之上：創意、品味，以及宅之力。<br>
-    這些價值驅動我們在咖啡製程中持續創新，也彰顯了我們對美好生活的致敬。<br>
-    我們承諾，呈現每一份用心打磨的商品，給到需要它的顧客手中。<br><br>
-    
-    「宅之力」不僅體現了我們對職人文化的追求，也從動漫次文化中汲取了豐富靈感，<br>
-    宣示我們對技術精進的不懈努力。在程式碼與咖啡之間，嘗試架起創新與實踐的橋樑，<br>
-    啡藝精研致力於將這種獨特文化融入我們的產品與服務，<br>
-    確保每個項目不僅是想法和技術的展示，也兼具文化底蘊，<br>
-    玩味人+宅持續迭代的不完美之美。<br>
-    無論您身在何處，我們的產品或能為您帶來片刻的寧靜與滿足。<br><br>
-    
-    讓我們以重要的順序來做值得花時間的事，因為容易從來不是我們的目標，卓越才是。<br>
-    正是你為你的玫瑰花所花費的時間，才讓你的玫瑰花變得如此重要。<br>
+  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty] leading-relaxed paragraph">
+    啡藝精研今年邁入第五年。
   </p>
-  <br>
-  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty]"></p>
-  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty]"></p>
-  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty]"></p>
+  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty] leading-relaxed paragraph">
+    透過對咖啡的深切熱愛與專業精神，<br>
+    您共同深探創意無限的咖啡世界。<br>
+    為客戶帶來的是味覺的饗宴，<br>
+    更是一段值得珍惜的美好時光。
+  </p>
+  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty] leading-relaxed paragraph">
+    我們的品牌建立在三大核心價值之上：<br>
+    創意、品味，以及宅之力。<br>
+    這些價值驅動我們在咖啡製程中持續創新，<br>
+    也彰顯了我們對美好生活的致敬。<br>
+    我們承諾，呈現每一份用心打磨的商品，<br>
+    給到需要它的顧客手中。
+  </p>
+  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty] leading-relaxed paragraph">
+    「宅之力」不僅體現了我們對職人文化的追求，<br>
+    也從動漫次文化中汲取了豐富靈感，<br>
+    宣示我們對技術精進的不懈努力。<br>
+    在程式碼與咖啡之間，<br>
+    嘗試架起創新與實踐的橋樑，<br>
+    致力於將這種獨特文化融入我們的產品與服務，<br>
+    確保每個項目不僅是想法和技術的展示，<br>
+    也兼具文化底蘊，<br>
+    玩味人+宅持續迭代的不完美之美。<br>
+    無論您身在何處，<br>
+    我們的產品或能為您帶來片刻的寧靜與滿足。
+  </p>
+  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty] leading-relaxed paragraph">
+    讓我們以重要的順序來做值得花時間的事，<br>
+    因為容易從來不是我們的目標，卓越才是。
+  </p>
+  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty] leading-relaxed paragraph">
+    正是你為你的玫瑰花所花費的時間，<br>
+    才讓你的玫瑰花變得如此重要。
+  </p>
 </div>
